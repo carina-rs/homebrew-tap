@@ -1,30 +1,30 @@
 # Homebrew formula template for Carina
 # This template is used by the release workflow to generate the actual formula.
-# Placeholders: 0.7.0, 805f7510126a2f514a6b794ac3dd30320fc3b5f800b69de44c1b281a48095cc1, 2abc7baa061c172119a3f9fb0cfadf13899cbc15999b31dd1aa692f4f45454c1, bd3fb1ceb59303d8b57cccfebc790c46f5079407ab834b843a1f512659343132, 1c6b7fa262010aa0dc9ed57732fe5ca6559f18762c7312ad279a59c10110520a
+# Placeholders: 0.7.1, 4d28bc50424ddd9a7c9c6ae405526e172ca0ef92b800709ede55d51616fdeb67, c6b42cabcd4bd075f66886b006b846100ae745139b3b3b575f1c64488229770f, 4fb4d585483dfc1cd4f7f62426e40c1dd1de2e3b5131c94e751b88ab1b072423, 249fea84926f76a0db49b169c2f52680df649c9b88d49c4fd8cce967fc0f0128
 
 class Carina < Formula
   desc "A functional infrastructure management tool"
   homepage "https://github.com/carina-rs/carina"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/carina-rs/carina/releases/download/v0.7.0/carina-0.7.0-macos-aarch64.tar.gz"
-      sha256 "805f7510126a2f514a6b794ac3dd30320fc3b5f800b69de44c1b281a48095cc1"
+      url "https://github.com/carina-rs/carina/releases/download/v0.7.1/carina-0.7.1-macos-aarch64.tar.gz"
+      sha256 "4d28bc50424ddd9a7c9c6ae405526e172ca0ef92b800709ede55d51616fdeb67"
     else
-      url "https://github.com/carina-rs/carina/releases/download/v0.7.0/carina-0.7.0-macos-x86_64.tar.gz"
-      sha256 "2abc7baa061c172119a3f9fb0cfadf13899cbc15999b31dd1aa692f4f45454c1"
+      url "https://github.com/carina-rs/carina/releases/download/v0.7.1/carina-0.7.1-macos-x86_64.tar.gz"
+      sha256 "c6b42cabcd4bd075f66886b006b846100ae745139b3b3b575f1c64488229770f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/carina-rs/carina/releases/download/v0.7.0/carina-0.7.0-linux-aarch64.tar.gz"
-      sha256 "bd3fb1ceb59303d8b57cccfebc790c46f5079407ab834b843a1f512659343132"
+      url "https://github.com/carina-rs/carina/releases/download/v0.7.1/carina-0.7.1-linux-aarch64.tar.gz"
+      sha256 "4fb4d585483dfc1cd4f7f62426e40c1dd1de2e3b5131c94e751b88ab1b072423"
     else
-      url "https://github.com/carina-rs/carina/releases/download/v0.7.0/carina-0.7.0-linux-x86_64.tar.gz"
-      sha256 "1c6b7fa262010aa0dc9ed57732fe5ca6559f18762c7312ad279a59c10110520a"
+      url "https://github.com/carina-rs/carina/releases/download/v0.7.1/carina-0.7.1-linux-x86_64.tar.gz"
+      sha256 "249fea84926f76a0db49b169c2f52680df649c9b88d49c4fd8cce967fc0f0128"
     end
   end
 
